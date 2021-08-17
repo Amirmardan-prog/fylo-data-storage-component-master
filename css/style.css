@@ -12,18 +12,8 @@ body{
   align-items: center;
 }
 
-.container{
-  display: flex;
-  width: 60%;
-  justify-content: center;
-  position: absolute;
-  /* align-items: center; */
-}
-
 .bg-pattern{
   position: absolute;
-  /* right: 0; */
-  /* bottom: 0; */
   top:50%;
   z-index: -1;
   width: 100%;
