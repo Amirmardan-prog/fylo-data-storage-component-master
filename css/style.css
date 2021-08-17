@@ -12,6 +12,14 @@ body{
   align-items: center;
 }
 
+.container{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  position: absolute;
+  /* align-items: center; */
+}
+
 .bg-pattern{
   position: absolute;
   /* right: 0; */
@@ -57,8 +65,10 @@ body{
 .top-part-storage{
   display: flex;
   position: relative;
+  outline: 2px solid green;
 }
 
+/*  ==== progressba ===== */
 .progressbar{
   display: block;
   width: 100%;
@@ -90,18 +100,46 @@ body{
   top: 6%;
 
 }
-
+/*   ===== message for left value ===== */
+.msg{
+  outline: 2px solid blue;
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
 .value-left{
   background-color: white;
   display: flex;
-  position: absolute;
-  right: 0;
+  padding: 1rem;
+  border-radius: 20px 20px 0 20px;
 }
+
+.triangle{
+  width: 0;
+  height: 0;
+  position: relative;
+  left: 85%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+  border-bottom: 10px solid transparent;
+
+}
+
+/* .triangle{
+  width: 10%;
+  height: 2rem;
+  background-color: white;
+  position: relative;
+  border
+  left: 90%
+} */
 
 h1{
   margin: 0;
 }
 
+/*  ===== unde the progress bar ====== */
 .range-limit{
   position: relative;
 }
