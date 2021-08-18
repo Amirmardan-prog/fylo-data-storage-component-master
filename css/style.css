@@ -1,7 +1,9 @@
+
 body{
   background-color: hsl(229, 57%, 11%);
   font-family: Raleway, sans-serif;
   font-size: 0.98rem;
+  color: white;
 }
 
 .work-area{
@@ -53,10 +55,11 @@ body{
 }
 
 .top-part-storage{
-  display: flex;
+  display: inline-block;
   position: relative;
   outline: 2px solid green;
 }
+
 
 /*  ==== progressba ===== */
 .progressbar{
@@ -104,6 +107,11 @@ body{
   border-radius: 20px 20px 0 20px;
 }
 
+.value-left span{
+  text-transform: uppercase;
+  color: hsl(229, 7%, 55%);
+}
+
 .triangle{
   width: 0;
   height: 0;
@@ -116,17 +124,10 @@ body{
 
 }
 
-/* .triangle{
-  width: 10%;
-  height: 2rem;
-  background-color: white;
-  position: relative;
-  border
-  left: 90%
-} */
-
 h1{
   margin: 0;
+  color: black;
+  /* font-weight: bold; */
 }
 
 /*  ===== unde the progress bar ====== */
@@ -137,4 +138,42 @@ h1{
   position: absolute;
   right: 0;
 
+}
+
+@media (max-width:858px){
+  .top-part-storage{
+    font-size: 0.9rem;
+}
+
+.left-box{
+
+  padding: 2rem 6rem 1rem 2rem;
+}
+}
+
+@media (max-width:512px){
+  .msg{
+    font-size: 0.9rem;
+}
+
+.left-box{
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.thumb{
+  left: 89.4%;
+  top: 9%;
+}
+
+.right-box{
+  margin-left: 0.5rem;
+  padding: 1rem;
+  width: 40%;
+
+}
+
+@media (max-width:400px){
+  .work-area{
+    flex-direction: column;
+  }
 }
