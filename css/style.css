@@ -50,8 +50,10 @@ body{
 .right-box{
   background-color: hsl(228, 56%, 26%);
   margin-left: 1rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   width: 30%;
+  border-radius: 10px;
+  padding:
 
 }
 
@@ -229,7 +231,7 @@ h1{
   .msg_m{
     position: absolute;
     right: 0;
-    bottom: 5%;
+    bottom: 15%;
     width: 100%;
     display: flex;
     justify-content: center;
